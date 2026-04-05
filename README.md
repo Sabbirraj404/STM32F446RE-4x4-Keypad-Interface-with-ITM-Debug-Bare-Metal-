@@ -107,7 +107,7 @@ This project helps you understand:
 
 ##  Author
 
-Md. Samiul Islam Sabbir
+Md. Samiul Islam Sabbir | 
 Embedded Systems & IoT Engineer
 
 ---
