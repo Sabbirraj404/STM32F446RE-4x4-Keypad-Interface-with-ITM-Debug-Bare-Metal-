@@ -1,22 +1,22 @@
-# 🔢 STM32F446RE 4x4 Keypad Interface with ITM Debug (Bare Metal)
+#  STM32F446RE 4x4 Keypad Interface with ITM Debug (Bare Metal)
 
 A bare-metal implementation of a 4x4 matrix keypad interface using STM32F446RE.
 This project demonstrates low-level GPIO control, matrix scanning, and real-time debugging using ITM (Instrumentation Trace Macrocell) without using HAL libraries.
 
 ---
 
-## 🚀 Features
+## Features
 
-* 🔧 Bare-metal (register-level) programming
-* 🔢 4x4 matrix keypad scanning
-* ⚡ Efficient row-column multiplexing
-* 🖥️ Real-time output via ITM (no UART required)
-* 🧠 Debounce handling and key release detection
-* 💡 Clean and minimal embedded C implementation
+* Bare-metal (register-level) programming
+* 4x4 matrix keypad scanning
+* Efficient row-column multiplexing
+* Real-time output via ITM (no UART required)
+* Debounce handling and key release detection
+* Clean and minimal embedded C implementation
 
 ---
 
-## 🧰 Hardware Requirements
+## Hardware Requirements
 
 * STM32F446RE (Nucleo / custom board)
 * 4x4 Matrix Keypad
@@ -25,7 +25,7 @@ This project demonstrates low-level GPIO control, matrix scanning, and real-time
 
 ---
 
-## 🔌 Pin Configuration
+## Pin Configuration
 
 | Keypad | STM32 Pin |
 | ------ | --------- |
@@ -40,7 +40,7 @@ This project demonstrates low-level GPIO control, matrix scanning, and real-time
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 The keypad uses a matrix configuration of rows and columns.
 
@@ -52,7 +52,7 @@ The keypad uses a matrix configuration of rows and columns.
 
 ---
 
-## 🔍 Example Flow
+## Example Flow
 
 Pressing key `5`:
 
@@ -62,7 +62,7 @@ Pressing key `5`:
 
 ---
 
-## ⚙️ Key Concepts Used
+## Key Concepts Used
 
 * GPIO register configuration (MODER, ODR, IDR, PUPDR)
 * Bit masking and shifting
@@ -72,7 +72,7 @@ Pressing key `5`:
 
 ---
 
-## 🖥️ ITM Debug Setup
+## ITM Debug Setup
 
 To view output in STM32CubeIDE:
 
@@ -84,48 +84,18 @@ To view output in STM32CubeIDE:
 
 ---
 
-## 📤 Output Example
+## Output Example
 
 ```
 Pressed Key: 1
 Pressed Key: 5
 Pressed Key: A
 ```
-
 ---
 
-## 📁 Project Structure
 
-```
-├── main.c
-├── keypad.c (optional split)
-├── README.md
-```
 
----
-
-## ⚠️ Common Issues & Fixes
-
-| Issue              | Solution                     |
-| ------------------ | ---------------------------- |
-| No output in ITM   | Enable SWV + correct clock   |
-| Wrong key detected | Check row/column wiring      |
-| Multiple prints    | Add debounce + release logic |
-| No response        | Ensure GPIO clock enabled    |
-
----
-
-## 🔥 Future Improvements
-
-* ⏱️ Interrupt-based keypad scanning
-* 📟 LCD interface (16x2 / I2C)
-* 🔐 Password-based access system
-* 🌐 IoT integration (ESP8266 / MQTT)
-* ⚡ Non-blocking scan algorithm
-
----
-
-## 📚 Learning Outcomes
+## Learning Outcomes
 
 This project helps you understand:
 
@@ -135,14 +105,14 @@ This project helps you understand:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 Md. Samiul Islam Sabbir
 Embedded Systems & IoT Engineer
 
 ---
 
-## ⭐ If You Like This Project
+## If You Like This Project
 
 Give it a ⭐ on GitHub and share with fellow embedded learners!
 
